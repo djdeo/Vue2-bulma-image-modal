@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>vue2-image-grid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.3/css/bulma.min.css">
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body class="container">
+    <h1>This is to show 9 pics </h1>
+    <p>The first div can be used for video, the rest of them are for images</p>
+    <hr>
+    <section>
+        <div class="gridContent" id="vuetable">
+            <div class="one">
+                <figure> 
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
+                    <figcaption class="has-text-centered">Show video here</figcaption>
+                </figure>
+            </div>
+            <div v-for="photo in photos">
+            	<figure>
+                <img :src="photo.link" @click="photo.showModal = true">
+				<figcaption class="has-text-centered">
+					{{photo.name}}
+				</figcaption>
+                <image-temp v-show="photo.showModal" @close="photo.showModal = false"><img :src="photo.link" alt=""></image-temp>
+            	</figure>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.3/vue.js"></script>
+    <script src="src/js/vue-img.js"></script>
+</body>
+
+</html>
