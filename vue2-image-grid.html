@@ -14,12 +14,6 @@
     <hr>
     <section>
         <div class="gridContent" id="vuetable">
-            <div class="one">
-                <figure> 
-                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="">
-                    <figcaption class="has-text-centered">Show video here</figcaption>
-                </figure>
-            </div>
             <div v-for="photo in photos">
             	<figure>
                 <img :src="photo.link" @click="photo.showModal = true">
