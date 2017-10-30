@@ -15,7 +15,7 @@
         padding: 10px;
     }
 
-    .one {
+    .gridContent div:first-child {
         grid-column: 1/3;
         grid-row: 1/3;
     }
@@ -26,7 +26,7 @@
         .gridContent {
             grid-template-columns: repeat(2, 1fr);
         }
-        .one {
+        .gridContent div:first-child {
             grid-column: 1/3;
             grid-row: 1/3;
         }
