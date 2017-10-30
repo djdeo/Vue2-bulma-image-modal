@@ -22,7 +22,8 @@ new Vue({
         {link:'src/img/640x480.png',name:'image title 5', showModal: false},
         {link:'src/img/640x480.png',name:'image title 6', showModal: false},
         {link:'src/img/640x480.png',name:'image title 7', showModal: false},
-        {link:'src/img/640x480.png',name:'image title 8', showModal: false}
+        {link:'src/img/640x480.png',name:'image title 8', showModal: false},
+        {link:'src/img/640x480.png',name:'image title 9', showModal: false}    
         ]
     }
 });
