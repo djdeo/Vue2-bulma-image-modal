@@ -5,3 +5,8 @@ v-for all the images, and click each image to show the image modal using bulma.c
 
 use div:first-child to show the very first div in different style, loop all the images in v-for, no need to add another style in the html.
 
+## Add webpack version
+
+use `build-index.html` and the `build` folder together will show the same effect, supports many browsers except ie11
+
+
